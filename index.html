@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1a1d23;
+      --muted: #5c6570;
+      --line: #e2e6eb;
+      --link: #0b57d0;
+      --link-hover: #0842a0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    h1 {
+      margin: 0 0 24px;
+      font-size: 28px;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 14px 18px;
+    }
+
+    th {
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      background: #fafbfc;
+    }
+
+    td {
+      border-bottom: 1px solid var(--line);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .project {
+      width: 220px;
+      font-weight: 600;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 700px) {
+      thead {
+        display: none;
+      }
+
+      tr {
+        display: block;
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      tr:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        display: block;
+        width: auto;
+        padding: 0;
+        border: none;
+      }
+
+      .project {
+        width: auto;
+        margin-bottom: 8px;
+      }
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Projects</h1>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="project">Moba Universe</td>
+            <td><a href="https://mobauniverse.com">https://mobauniverse.com</a></td>
+          </tr>
+          <tr>
+            <td class="project">Nft marketplace</td>
+            <td>
+              <div class="links">
+                <a href="https://grootoss.github.io/nft-marketplace">https://grootoss.github.io/nft-marketplace</a>
+                <a href="https://grootoss.github.io/nft-marketplace/marketplace">https://grootoss.github.io/nft-marketplace/marketplace</a>
+                <a href="https://grootoss.github.io/nft-marketplace/rankings">https://grootoss.github.io/nft-marketplace/rankings</a>
+                <a href="https://grootoss.github.io/nft-marketplace/nft">https://grootoss.github.io/nft-marketplace/nft</a>
+                <a href="https://grootoss.github.io/nft-marketplace/wallet">https://grootoss.github.io/nft-marketplace/wallet</a>
+                <a href="https://grootoss.github.io/nft-marketplace/signup">https://grootoss.github.io/nft-marketplace/signup</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="project">Abc auto</td>
+            <td><a href="https://grootoss.github.io/abc-auto">https://grootoss.github.io/abc-auto</a></td>
+          </tr>
+          <tr>
+            <td class="project">Gastro chef</td>
+            <td><a href="https://grootoss.github.io/gastro-chef">https://grootoss.github.io/gastro-chef</a></td>
+          </tr>
+          <tr>
+            <td class="project">Horse club</td>
+            <td><a href="https://grootoss.github.io/horse-club">https://grootoss.github.io/horse-club</a></td>
+          </tr>
+          <tr>
+            <td class="project">Sosnevskaya</td>
+            <td><a href="https://grootoss.github.io/sosnevskaya">https://grootoss.github.io/sosnevskaya</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
